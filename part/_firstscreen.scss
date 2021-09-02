@@ -1,0 +1,17 @@
+.firstscreen {
+    background:{
+        image: linear-gradient(to right,$bordo,$indigo);
+
+    }
+    color:$white;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    &_logo{
+
+    }
+    &_menu{
+
+    }
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font:{
+        family: $font;
+        size:24px;
+        style:normal;
+        weight:400;
+
+    }
+    color: $indigo;
+    letter-spacing: 10%;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+}
+section {
+
+    min-height: 512px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteiner {
+    width: 95%;
+    max-width: 940px;
+    margin: 0 auto;
+
+
+}
