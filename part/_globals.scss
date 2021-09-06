@@ -17,6 +17,13 @@ body {
 }
 a{
     text-decoration: none;
+    color: $white;
+    size: 16px;
+    line-height: 24px;
+   
+    
+   
+    
 }
 section {
 
@@ -26,6 +33,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    
 
 }
 
@@ -33,6 +42,8 @@ section {
     width: 95%;
     max-width: 940px;
     margin: 0 auto;
+   
+   
 
 
 }

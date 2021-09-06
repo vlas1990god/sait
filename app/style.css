@@ -21,7 +21,10 @@ body {
   line-height: 1.5em; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff;
+  size: 16px;
+  line-height: 24px; }
 
 section {
   min-height: 512px;
@@ -29,7 +32,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .conteiner {
   width: 95%;
@@ -43,6 +47,13 @@ section {
 .header {
   display: flex;
   justify-content: space-between; }
+
+h1 {
+  text-align: center; }
+
+.header {
+  margin: 0px 50px;
+  padding-bottom: 100px; }
 
 .aboutus {
   background-color: #fff;
