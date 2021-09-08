@@ -41,19 +41,62 @@ section {
   margin: 0 auto; }
 
 .firstscreen {
+  padding: 50px 0;
   background-image: linear-gradient(to right, #7F2F4A, #384C85);
   color: #fff; }
+  .firstscreen .conteiner {
+    flex-grow: 1; }
 
 .header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0px 50px;
+  padding-bottom: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff; }
+  @media screen and (max-width: 768px) {
+    .header_logo {
+      border-bottom: 1px solid #fff;
+      text-align: center;
+      padding-bottom: 50px; } }
+  .header_menu {
+    display: flex; }
+    .header_menu a {
+      margin-left: 70px; }
+      @media screen and (max-width: 520px) {
+        .header_menu a {
+          display: none; } }
+      .header_menu a::after {
+        display: block;
+        content: "";
+        height: 0;
+        border-bottom: 1px solid #fff;
+        margin-top: 20px;
+        transform: scaleX(0);
+        transition-property: transform;
+        transition-duration: 0.5s; }
+      .header_menu a:hover::after {
+        transform: scale(1); }
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      border-bottom: none; } }
+  @media screen and (max-width: 520px) {
+    .header {
+      flex-direction: column;
+      max-height: 737px; } }
 
 h1 {
   text-align: center; }
 
-.header {
-  margin: 0px 50px;
-  padding-bottom: 100px; }
+@media screen and (max-width: 520px) {
+  .discription {
+    font-size: 40px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 10%;
+    max-height: 737px; } }
 
 .aboutus {
   background-color: #fff;

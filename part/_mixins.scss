@@ -26,3 +26,17 @@
         position:center top ;
     } 
 }
+@mixin tablet {
+    @media screen and (max-width:768px)
+    {
+        @content;
+    }
+    
+}
+@mixin phone {
+    @media screen and (max-width:520px)
+    {
+        @content;
+    }
+    
+}
