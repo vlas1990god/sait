@@ -1,2 +1,22 @@
 .contacts {
+    h2 {
+        color:$fiolet;
+        padding-bottom: 26px;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: space-between
+        
+
+    }
     @include bgcolor($white,$indigo);}
+    .conteier_item .abzac {
+        width: 617px;
+        height: 137px;
+
+    }
+    .conteier_item p {
+        width: 293px;
+        height: 137px;
+    }
+    

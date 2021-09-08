@@ -1,3 +1,31 @@
-.aboutus {
-   @include bgcolor($white,$indigo);
+.aboutus { 
+   .conteiner_item{
+   @include phone {
+      max-width:  384px;;
+   display:column;
+   
+   
+   
+
+   }
 }
+   
+
+   @include bgcolor($white,$indigo);
+   .conteiner_item {
+      width:404px/940px*100%
+      ;
+      h2 {
+         padding-bottom: 26px;
+         color: $fiolet;
+         text-transform: uppercase;
+      }
+   }
+   .conteiner{
+      display: flex;
+      justify-content: space-between;
+      
+      
+   }
+}
+

@@ -1,4 +1,45 @@
 .app2 {
+    .conteiner_item{
+        h2{
+            padding-bottom: 16px;
+            
+        }
+        [type=submit] {
+            width: 213px;
+            height: 44px;
+            
+            background-color: transparent;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 5px;
+            text:
+            {align: center;
+            transform: uppercase;}
+            font:
+            {
+                family: $font;
+                size: 24px;
+            }
+
+           &:hover {
+               background-color: rgba(255, 249, 249, 0.445);
+           } 
+
+        }
+        
+        p{
+            padding-bottom: 22px;
+        }
+        
+        width: 404px;
+        color:$white;
+    }
+    
     @extend %bgimage;
     background-image: url('images/223.jpg');
+    .conteiner {
+        display: flex;
+        justify-content: flex-end;
+
+    }
 }

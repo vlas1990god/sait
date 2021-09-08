@@ -8,6 +8,11 @@
         flex-grow: 1;
     }
     color:$white;
+    
+        
+    @include tablet {
+        min-height: 100%;
+    }
 }
 .header {
     display: flex;
@@ -71,13 +76,19 @@ h1{
 }
 
 .discription {
+    @include tablet {
+        margin: 170px 0 0;
+        height: auto;
+    }
     @include phone {
         font-size: 40px;
         line-height: 75px;
         text-align: center;
-        letter-spacing: 10%;
+        letter-spacing: 2.4px;
         max-height: 737px;
+        
         
     }
 }
+
 

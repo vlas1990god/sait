@@ -12,12 +12,13 @@
   box-sizing: border-box; }
 
 body {
+  
   font-family: "Abel", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   color: #384C85;
-  letter-spacing: 10%;
+  letter-spacing: 2.4px;
   line-height: 1.5em; }
 
 a {
@@ -32,13 +33,18 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: center; }
 
 .conteiner {
   width: 95%;
   max-width: 940px;
   margin: 0 auto; }
+
+html, body {
+  height: 100%; }
+
+h2 {
+  text-transform: uppercase; }
 
 .firstscreen {
   padding: 50px 0;
@@ -46,6 +52,9 @@ section {
   color: #fff; }
   .firstscreen .conteiner {
     flex-grow: 1; }
+  @media screen and (max-width: 768px) {
+    .firstscreen {
+      min-height: 100%; } }
 
 .header {
   display: flex;
@@ -90,33 +99,131 @@ section {
 h1 {
   text-align: center; }
 
+@media screen and (max-width: 768px) {
+  .discription {
+    margin: 170px 0 0;
+    height: auto; } }
 @media screen and (max-width: 520px) {
   .discription {
     font-size: 40px;
     line-height: 75px;
     text-align: center;
-    letter-spacing: 10%;
+    letter-spacing: 2.4px;
     max-height: 737px; } }
 
 .aboutus {
   background-color: #fff;
   color: #384C85;
   padding: 100px 0; }
+  @media screen and (max-width: 520px) {
+    .aboutus .conteiner_item {
+      max-width: 384px;
+      display: column; } }
+  .aboutus .conteiner_item {
+    width: 42.9787234043%; }
+    .aboutus .conteiner_item h2 {
+      padding-bottom: 26px;
+      color: #551A8B;
+      text-transform: uppercase; }
+  .aboutus .conteiner {
+    display: flex;
+    justify-content: space-between; }
 
 .app1 {
   background-image: url("images/123.jpg"); }
+  .app1 .conteiner_item {
+    width: 404px;
+    color: #fff; }
+    .app1 .conteiner_item h2 {
+      padding-bottom: 16px; }
+    .app1 .conteiner_item [type=submit] {
+      width: 213px;
+      height: 44px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Abel", sans-serif;
+      font-size: 24px; }
+      .app1 .conteiner_item [type=submit]:hover {
+        background-color: rgba(255, 249, 249, 0.445); }
+    .app1 .conteiner_item p {
+      padding-bottom: 22px; }
+  .app1 .conteiner {
+    display: flex;
+    justify-content: flex-end; }
 
 .app2 {
   background-image: url("images/223.jpg"); }
+  .app2 .conteiner_item {
+    width: 404px;
+    color: #fff; }
+    .app2 .conteiner_item h2 {
+      padding-bottom: 16px; }
+    .app2 .conteiner_item [type=submit] {
+      width: 213px;
+      height: 44px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Abel", sans-serif;
+      font-size: 24px; }
+      .app2 .conteiner_item [type=submit]:hover {
+        background-color: rgba(255, 249, 249, 0.445); }
+    .app2 .conteiner_item p {
+      padding-bottom: 22px; }
+  .app2 .conteiner {
+    display: flex;
+    justify-content: flex-end; }
 
 .contacts {
   background-color: #fff;
   color: #384C85;
   padding: 100px 0; }
+  .contacts h2 {
+    color: #551A8B;
+    padding-bottom: 26px; }
+  .contacts .conteiner {
+    display: flex;
+    justify-content: space-between; }
+
+.conteier_item .abzac {
+  width: 617px;
+  height: 137px; }
+
+.conteier_item p {
+  width: 293px;
+  height: 137px; }
 
 .footer {
   background-color: #384C85;
   color: #fff;
   padding: 100px 0; }
+  .footer .conteiner_item {
+    display: flex;
+    justify-content: space-between; }
+    .footer .conteiner_item button {
+      width: 200px;
+      height: 44px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Abel", sans-serif;
+      font-size: 24px; }
+      .footer .conteiner_item button:hover {
+        background-color: rgba(255, 249, 249, 0.445); }
+    .footer .conteiner_item_p {
+      width: 536px;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 10%; }
 
 /*# sourceMappingURL=style.css.map */
