@@ -12,7 +12,6 @@
   box-sizing: border-box; }
 
 body {
-  
   font-family: "Abel", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -45,6 +44,20 @@ html, body {
 
 h2 {
   text-transform: uppercase; }
+
+[type=submit] {
+  width: 213px;
+  height: 44px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Abel", sans-serif;
+  font-size: 24px; }
+  [type=submit]:hover {
+    background-color: rgba(255, 249, 249, 0.445); }
 
 .firstscreen {
   padding: 50px 0;
@@ -115,19 +128,23 @@ h1 {
   background-color: #fff;
   color: #384C85;
   padding: 100px 0; }
-  @media screen and (max-width: 520px) {
-    .aboutus .conteiner_item {
-      max-width: 384px;
-      display: column; } }
-  .aboutus .conteiner_item {
-    width: 42.9787234043%; }
-    .aboutus .conteiner_item h2 {
-      padding-bottom: 26px;
-      color: #551A8B;
-      text-transform: uppercase; }
   .aboutus .conteiner {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 520px) {
+      .aboutus .conteiner {
+        flex-direction: column; } }
+    .aboutus .conteiner_item {
+      width: 42.9787234043%; }
+      .aboutus .conteiner_item h2 {
+        padding-bottom: 26px;
+        color: #551A8B;
+        text-transform: uppercase; }
+      @media screen and (max-width: 520px) {
+        .aboutus .conteiner_item {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 66px; } }
 
 .app1 {
   background-image: url("images/123.jpg"); }
@@ -154,6 +171,16 @@ h1 {
   .app1 .conteiner {
     display: flex;
     justify-content: flex-end; }
+    @media screen and (max-width: 768px) {
+      .app1 .conteiner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
+    @media screen and (max-width: 520px) {
+      .app1 .conteiner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
 
 .app2 {
   background-image: url("images/223.jpg"); }
@@ -180,6 +207,16 @@ h1 {
   .app2 .conteiner {
     display: flex;
     justify-content: flex-end; }
+    @media screen and (max-width: 768px) {
+      .app2 .conteiner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
+    @media screen and (max-width: 520px) {
+      .app2 .conteiner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
 
 .contacts {
   background-color: #fff;
@@ -191,35 +228,38 @@ h1 {
   .contacts .conteiner {
     display: flex;
     justify-content: space-between; }
-
-.conteier_item .abzac {
-  width: 617px;
-  height: 137px; }
-
-.conteier_item p {
-  width: 293px;
-  height: 137px; }
+    @media screen and (max-width: 520px) {
+      .contacts .conteiner {
+        flex-direction: column;
+        text-align: left; } }
+    @media screen and (max-width: 520px) {
+      .contacts .conteiner_item {
+        padding: 0 50px 50px; } }
+    .contacts .conteiner_item_part {
+      width: 65.6382978723%; }
+      @media screen and (max-width: 520px) {
+        .contacts .conteiner_item_part {
+          width: 100%; } }
 
 .footer {
   background-color: #384C85;
   color: #fff;
   padding: 100px 0; }
+  @media screen and (max-width: 768px) {
+    .footer .conteiner_item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      .footer .conteiner_item p {
+        padding: 50px; } }
+  @media screen and (max-width: 520px) {
+    .footer .conteiner_item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
   .footer .conteiner_item {
     display: flex;
     justify-content: space-between; }
-    .footer .conteiner_item button {
-      width: 200px;
-      height: 44px;
-      background-color: transparent;
-      color: #fff;
-      border: 1px solid #fff;
-      border-radius: 5px;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: "Abel", sans-serif;
-      font-size: 24px; }
-      .footer .conteiner_item button:hover {
-        background-color: rgba(255, 249, 249, 0.445); }
     .footer .conteiner_item_p {
       width: 536px;
       font-size: 24px;

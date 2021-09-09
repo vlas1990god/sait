@@ -55,3 +55,25 @@ html,body {
 h2{
     text-transform: uppercase;
 }
+[type=submit] {
+    width: 213px;
+    height: 44px;
+    
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 5px;
+    text:
+    {align: center;
+    transform: uppercase;}
+    font:
+    {
+        family: $font;
+        size: 24px;
+    }
+
+   &:hover {
+       background-color: rgba(255, 249, 249, 0.445);
+   } 
+
+}

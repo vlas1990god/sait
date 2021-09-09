@@ -5,18 +5,37 @@
     }
     .conteiner{
         display: flex;
-        justify-content: space-between
-        
+        justify-content: space-between;
+        @include phone{
+            flex-direction: column;
+            text-align:left;
+           
+
+
+        }
+        &_item {
+        //    flex-basis:50%;
+        @include phone {
+            padding: 0 50px 50px;
+
+
+        }
+              
+           &_part {
+               @include phone {
+                   width: 100%;
+               }
+               width: 617px/940px*100%;
+           }
+        }
+
 
     }
     @include bgcolor($white,$indigo);}
-    .conteier_item .abzac {
-        width: 617px;
-        height: 137px;
+    
+        
+        
 
-    }
-    .conteier_item p {
-        width: 293px;
-        height: 137px;
-    }
+    
+    
     

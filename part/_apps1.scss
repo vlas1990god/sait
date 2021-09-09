@@ -39,6 +39,19 @@
 
     background-image: url('images/123.jpg');
     .conteiner {
+        @include tablet  {
+            
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+
+        }
         display: flex;
         justify-content: flex-end;
 
